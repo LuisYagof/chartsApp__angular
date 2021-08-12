@@ -1,27 +1,14 @@
 # ChartsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+Project using ng2-charts library to display bar charts, doughnut charts, etc.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- clone
+- npm i (watch out dependency conflicts between ng2-Charts and angular CLI version)
+- install json-server to provide data for 'doughnut http' component (npm i -g json-server --save; open terminal on src/db; run command 'json-server --watch db.json')
 
-## Code scaffolding
+### ⚠ THERE WAS A DEPENDENCY CONFLICT WITH ng2-charts. FIXED INSTALLING THIS VERSIONS OF THE PACKAGE -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- npm install chart.js@2.9.3 --save
+- npm install ng2-charts@2.2.3 --save

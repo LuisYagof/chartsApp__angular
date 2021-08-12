@@ -1,0 +1,24 @@
+<h2>Doughnut chart with HTTP petition</h2>
+<hr>
+
+<div *ngIf="doughnutChartData.length === 0; else divChart"
+  class="alert alert-info"> Loading... </div>
+
+<div class="row">
+  <div class="col">
+
+    <ng-template #divChart>
+      <div style="display: block">
+        <canvas baseChart
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType"
+          [colors]="colors">
+        </canvas>
+      </div>
+
+      <span class="float-end text-primary"> *In billions of users</span>
+    </ng-template>
+
+  </div>
+</div>
